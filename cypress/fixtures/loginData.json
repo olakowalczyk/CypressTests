@@ -1,6 +1,6 @@
 {
-  "valid_username" : "tomsmith",
-  "valid_password" : "SuperSecretPassword!",
-  "invalid_username" : "invaliduser",
-  "invalid_password" : "invalidpassword"
+    "valid_username": "tomsmith",
+    "valid_password": "SuperSecretPassword!",
+    "invalid_username": "invaliduser",
+    "invalid_password": "invalidpassword"
 }
