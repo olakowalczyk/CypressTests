@@ -8,8 +8,6 @@ describe('Login form', function () {
     })
 
     it('should login with valid credentials', function () {
-        // const { valid_username, valid_password, invalid_username, invalid_password }
-        // = this.data
         cy
             .login(data.valid_username, data.valid_password)
             .confirmLogin()
