@@ -6,7 +6,7 @@ describe('Dropdown list', function () {
 
     it('should select option form dropdown list', function () {
         cy
-            .navigate('dropdown')
+            .visit('dropdown')
             .selectFromDropdown(option)
             .validateDropdownValue(option_value)
     })

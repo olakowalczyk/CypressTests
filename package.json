@@ -1,5 +1,5 @@
 {
-  "name": "CypressTests-master",
+  "name": "cypresstestsmaster",
   "version": "1.0.0",
   "description": "This is a simple project for testing using **Cypress**. These tests are made just for Chrome browser.",
   "main": "index.js",

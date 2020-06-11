@@ -1,11 +1,5 @@
 /// <reference types="cypress" />
 
-// common
-Cypress.Commands.add('navigate', (directorypath) => {
-    cy
-    .visit(directorypath)
- })
-
 // /dropdown
 Cypress.Commands.add('selectFromDropdown', (text) => {
     cy
@@ -13,10 +7,10 @@ Cypress.Commands.add('selectFromDropdown', (text) => {
     .select(text)
  })
 
-Cypress.Commands.add('validateDropdownValue', (value) => {
+Cypress.Commands.add('validateDropdownValue', (text) => {
     cy
     .get('#dropdown')
-    .should('have.value', value)
+    .should('have.value', text)
  })
 
 // /login
@@ -26,12 +20,8 @@ Cypress.Commands.add('login', (username, password) => {
      .type(username)
      .get('#password')
      .type(password)
- })
-
-Cypress.Commands.add('confirmLogin', () => {
-    cy
-    .get('.radius')
-    .click()
+     .get('.radius')
+     .click()
 })
 
 Cypress.Commands.add('validateMessage', (text) => {
@@ -60,15 +50,15 @@ Cypress.Commands.add('removeElement', () => {
     .click()
 }) 
 
-Cypress.Commands.add('validateAccessibilityOfElement', (value) => {
+Cypress.Commands.add('validateAccessibilityOfButton', () => {
     cy
-    .contains(value)
+    .contains('Delete')
     .should('be.enabled')
 })
 
-Cypress.Commands.add('validateInaccessibilityOfElement', (value) => {
+Cypress.Commands.add('validateInaccessibilityOfButton', () => {
     cy
-    .contains(value)
+    .contains('Delete')
     .should('not.be.enabled')
 })
 
@@ -99,4 +89,14 @@ Cypress.Commands.add('validateEnabled', () => {
     .should('be.enabled')
 })
 
-
+// /tables
+Cypress.Commands.add('sortBy', (column) => {
+    cy
+    .get('#table1')
+    .children()
+    .first()
+    .children()
+    .children()
+    .contains(column)
+    .click()
+})

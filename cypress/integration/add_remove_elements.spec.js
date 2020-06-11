@@ -1,19 +1,18 @@
-///<reference types='cypress'/>
+/// <reference types='cypress' />
 
 describe('Add/Remove elements', function () {
-    const button = 'Delete'
 
     it('should add element', function () {
         cy
-            .navigate('add_remove_elements/')
+            .visit('add_remove_elements/')
             .addElement()
-            .validateAccessibilityOfElement(button)
+            .validateAccessibilityOfButton()
     })
 
     it('should remove element', function () {
         cy
-            .navigate('add_remove_elements/')
+            .visit('add_remove_elements/')
             .removeElement()
-            .validateInaccessibilityOfElement(button)
+            .validateInaccessibilityOfButton()
     })
 })

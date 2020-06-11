@@ -1,6 +1,5 @@
 # Cypress tests for http://the-internet.herokuapp.com/
 This is a simple project for testing using **Cypress**.
-These tests are made just for Chrome browser.
 
 ### Prerequisites
 In order to run these tests:
