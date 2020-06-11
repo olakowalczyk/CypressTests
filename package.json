@@ -1,12 +1,12 @@
 {
-  "name": "TestsUsingCypress",
+  "name": "CypressTests-master",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a simple project for testing using **Cypress**. These tests are made just for Chrome browser.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Aleksandra Kowalczyk",
+  "author": "",
   "license": "ISC"
 }
