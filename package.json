@@ -4,7 +4,7 @@
   "description": "This is a simple project for testing using **Cypress**. These tests are made just for Chrome browser.",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run"
+    "test": "npm cypress run"
   },
   "keywords": [],
   "author": "",
