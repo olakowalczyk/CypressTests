@@ -9,5 +9,5 @@ In order to run these tests:
 Get clone from this repo, open cmd and run commands:
 ```
 cd <the_repo_folder_path>
-npx cypress run
+npm run test:"your browser" 
 ```

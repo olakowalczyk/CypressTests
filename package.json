@@ -4,7 +4,9 @@
   "description": "This is a simple project for testing using **Cypress**. These tests are made just for Chrome browser.",
   "main": "index.js",
   "scripts": {
-    "test": "npm cypress run"
+    "test:chrome": "npx cypress run --browser chrome",
+    "test:firefox": "npx cypress run --browser firefox",
+    "test:edge": "npx cypress run --browser edge"
   },
   "keywords": [],
   "author": "",
