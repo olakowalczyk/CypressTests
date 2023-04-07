@@ -50,16 +50,16 @@ Cypress.Commands.add('removeElement', () => {
     .click()
 }) 
 
-Cypress.Commands.add('validateAccessibilityOfButton', () => {
+Cypress.Commands.add('validateAccessibilityOfButton', (button_name) => {
     cy
-    .contains('Delete')
+    .contains(button_name)
     .should('be.enabled')
 })
 
-Cypress.Commands.add('validateInaccessibilityOfButton', () => {
+Cypress.Commands.add('validateInaccessibilityOfButton', (button_name) => {
     cy
-    .contains('Delete')
-    .should('not.be.enabled')
+    .contains(button_name)
+    .should('not.exist')
 })
 
 // /dynamic_controls

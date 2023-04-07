@@ -6,13 +6,14 @@ describe('Add/Remove elements', function () {
         cy
             .visit('add_remove_elements/')
             .addElement()
-            .validateAccessibilityOfButton()
+            .validateAccessibilityOfButton('Delete')
     })
 
     it('should remove element', function () {
         cy
             .visit('add_remove_elements/')
+            .addElement()
             .removeElement()
-            .validateInaccessibilityOfButton()
+            .validateInaccessibilityOfButton('Delete')
     })
 })
