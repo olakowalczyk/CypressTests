@@ -1,15 +1,15 @@
 /// <reference types='cypress' />
 
-describe('Add/Remove elements', function () {
+describe('Add/Remove elements', () => {
 
-    it('should add element', function () {
+    it('should add element', () => {
         cy
             .visit('add_remove_elements/')
             .addElement()
             .validateAccessibilityOfButton('Delete')
     })
 
-    it('should remove element', function () {
+    it('should remove element', () => {
         cy
             .visit('add_remove_elements/')
             .addElement()

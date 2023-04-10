@@ -1,12 +1,12 @@
 /// <reference types="cypress" />
 
-describe('Tables - Actions', function () {
+describe('Tables - Actions', () => {
 
-    beforeEach(function () {
+    beforeEach(() => {
         cy.visit('tables')
     })
 
-    it('should edit first row', function () {
+    it('should edit first row', () => {
         cy
             .get('#table1 > tbody')
             .children()
@@ -17,7 +17,7 @@ describe('Tables - Actions', function () {
             .should('include', '#edit')
     })
 
-    it('should delete first row', function () {
+    it('should delete first row', () => {
         cy
             .get('#table1 > tbody')
             .children()
@@ -28,7 +28,7 @@ describe('Tables - Actions', function () {
             .should('include', '#delete')
     })
 
-    it('it should sort ascending by last name', function () {
+    it('it should sort ascending by last name', () => {
         const sorted = ['Bach', 'Conway', 'Doe', 'Smith']
         cy
             .sortBy('Last Name')
